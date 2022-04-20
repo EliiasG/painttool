@@ -1,2 +1,4 @@
 # painttool
-spaghetti
+
+# fancy thick text!
+## fancy other text?
