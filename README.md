@@ -1,4 +1,3 @@
 # painttool
 
-# fancy thick text!
-## fancy other text?
+## a 2d paining program inspired by blender and inkscape
