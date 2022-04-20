@@ -1,0 +1,255 @@
+/*light theme*/
+/*
+{
+    -main-color: #dbdbdb;
+    -secondary-color: #cccccc;
+    -third-color: #666666;
+    -text-color: BLACK;
+    -background-color: #ebebeb;
+}
+*/
+
+/*dark theme*/
+
+{
+    -main-color: #424243;
+    -secondary-color: #303031;
+    -third-color: #222222;
+    -text-color: WHITE;
+    -background-color: #666666;
+}
+
+.root
+{
+    -fx-text-fill: text-color;
+}
+
+#main-pane
+{
+    -fx-border-color: -background-color;
+    -fx-border-insets: 0;
+    -fx-border-width: 10;
+    -fx-background-color: -background-color;
+}
+
+.label
+{
+    -fx-text-fill: -text-color;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.tree-view
+{
+    -fx-border-color: -secondary-color;
+    -fx-border-width: 5;
+    -fx-background-color: -main-color;
+    -fx-background-radius: 10;
+    -fx-border-radius: 5;
+}
+
+.tree-view .tree-cell:selected
+{
+    -fx-background-color: -third-color;
+}
+
+.scroll-pane
+{
+    -fx-background-color: -main-color;
+    -fx-border-color: -secondary-color;
+    -fx-border-width: 5;
+    -fx-border-radius: 5;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+
+
+.scroll-pane .scroll-bar
+{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar .increment-button
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 2;
+}
+
+.scroll-pane .scroll-bar .decrement-button
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 2;
+}
+
+.scroll-pane .scroll-bar .thumb:hover
+{
+    -fx-background-color: -secondary-color;
+}
+
+.scroll-pane .scroll-bar .thumb
+{
+    -fx-background-color: -third-color;
+    -fx-background-radius: 5;
+}
+
+
+.scroll-pane .corner
+{
+    -fx-background-color: transparent;
+}
+
+
+.scroll-pane > .viewport
+{
+   -fx-background-color: transparent;
+}
+
+
+.text-field
+{
+    -fx-background-color: -secondary-color;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10;
+    -fx-text-fill: -text-color;
+    -fx-font-size: 14;
+    -fx-font-weight: 900;
+}
+
+.tree-view .tree-cell
+{
+    -fx-background-color: transparent;
+    -fx-text-fill: -text-color;
+    -fx-font-size: 15;
+    -fx-font-family: "Noto Sans";
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+}
+
+.tree-view .tree-cell .arrow
+{
+    -fx-background-color: -text-color;
+    -fx-border-color: transparent;
+}
+
+.titled-pane .title .arrow
+{
+    -fx-background-color: -text-color;
+    -fx-border-color: transparent;
+}
+
+.titled-pane .title
+{
+    -fx-background-color: -secondary-color;
+    -fx-background-radius: 10 10 0 0;
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+}
+
+.titled-pane:collapsed .title
+{
+    -fx-background-radius: 10;
+}
+
+
+.titled-pane
+{
+    -fx-text-fill: -text-color;
+    -fx-animated: false;
+}
+
+.button
+{
+    -fx-background-color: -secondary-color;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10;
+    -fx-text-fill: -text-color;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.titled-pane .content
+{
+    -fx-background-color: -main-color;
+    -fx-border-color: -secondary-color;
+    -fx-border-width: 2;
+    -fx-border-radius: 0 0 10 10;
+    -fx-background-radius: 0 0 10 10;
+}
+
+.color-picker
+{
+    -fx-background-color: -secondary-color;
+    -fx-background-radius: 10;
+}
+
+.color-picker .arrow-button .arrow
+{
+    -fx-background-color: -text-color;
+}
+
+.color-palette
+{
+    -fx-border-color: transparent;
+    -fx-background-color: -secondary-color;
+    -fx-background-radius: 10;
+    -fx-text-fill: -text-color;
+}
+
+.hyperlink:focused
+{
+    -fx-border-width: 0;
+}
+
+.hyperlink
+{
+    -fx-text-fill: -text-color;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-underline: false;
+    -fx-font-family: "MS Sans Serif";
+}
+
+.hyperlink:hover
+{
+    -fx-underline: true;
+}
+
+.custom-color-dialog
+{
+    -fx-background-color: -background-color;
+}
+
+.slider .track
+{
+    -fx-background-color: -secondary-color;
+    -fx-border-color: transparent;
+}
+
+.slider .thumb
+{
+    -fx-background-color: -main-color;
+    -fx-background-radius: 5;
+}
+
+.check-box:selected .box .mark
+{
+    -fx-background-color: -text-color;
+    -fx-border-color: -text-color;
+    -fx-background-radius: 10;
+}
+
+.check-box .box .mark
+{
+    -fx-border-color: transparent;
+    -fx-shape: "M 100 100 a 50 50 0 1 0 0.00001 0";
+}
+
+.check-box .box
+{
+    -fx-background-color: -secondary-color;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+}
